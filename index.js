@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { Circle, Triangle, Square, ShapeProperties }  = require('./lib/shapes.js');
 
+// Accepts user inputs for acustom logo
 const prompts = [
     {
         input: 'input',
@@ -30,12 +31,12 @@ const prompts = [
 
 ]
 
+// Creates the SVG based on user inputs
 function init() {
-
-
     inquirer
         .prompt(prompts)
         .then((data) => {
+            // Formats user text to uppercase 3 characters
             let formattedText = (data.text).toUpperCase();
             if (formattedText.length > 3) {
                 formattedText = formattedText.substring(0, 3);
@@ -52,13 +53,9 @@ function init() {
                 shape = new Triangle(shapeInfo);
             }
 
-            console.dir(shape);
             fs.writeFile(`./examples/${data.shape}.svg`, shape.render() , () => {
                 console.log('Success!');
             })
-            // console.dir(data)
-            // console.dir(limitChars)
-            // console.dir(shape)
         })
     
 }

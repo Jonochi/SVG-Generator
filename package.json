@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "name": "svg-generator",
+  "description": "## Table of Contents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonochi/SVG-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonochi/SVG-Generator/issues"
+  },
+  "homepage": "https://github.com/jonochi/SVG-Generator#readme"
 }
