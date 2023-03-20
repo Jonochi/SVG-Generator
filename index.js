@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { Circle, Triangle, Square, ShapeProperties }  = require('./lib/shapes.js');
+const { Circle, Triangle, Square, ShapeProperties } = require('./lib/shapes.js');
 
 // Accepts user inputs for acustom logo
 const prompts = [
@@ -43,7 +43,6 @@ function init() {
             }
 
             let shapeInfo = new ShapeProperties(data.shapeColor, formattedText, data.textColor);
-            console.dir(shapeInfo);
             let shape;
             if (data.shape === "Square") {
                 shape = new Square(shapeInfo);
@@ -53,11 +52,10 @@ function init() {
                 shape = new Triangle(shapeInfo);
             }
 
-            fs.writeFile(`./examples/${data.shape}.svg`, shape.render() , () => {
+            fs.writeFile(`./examples/${data.shape}.svg`, shape.render(), () => {
                 console.log('Success!');
             })
         })
-    
 }
 
 init();
