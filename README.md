@@ -21,7 +21,7 @@ N/A
 CLI functionality to allow users to create SVG files.
 ## Demo
 
-[Demo video here](https://drive.google.com/file/d/1rjsi_f-yXUiOEH8-dTuYZYrpa5PCNXhX/view)
+[Demo video here](https://drive.google.com/file/d/1vpfkUix3TJe8hwgMyL0EuW2RV969w6ND/view)
    
 
 ## Credits
