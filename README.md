@@ -1,4 +1,4 @@
-# Note Taker Module 11
+# SVG Generator
 
 ## Table of Contents
 
